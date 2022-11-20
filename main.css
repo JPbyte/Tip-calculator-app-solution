@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 :root{
     --Strong-cyan: hsl(172, 67%, 45%);
     --Very-dark-cyan: hsl(183, 100%, 15%);
@@ -13,6 +13,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Space Mono';
 }
 
 body{
@@ -35,7 +36,51 @@ img{
     width: 100%;
     max-width: 50rem;
     height: 28rem;
-    background-color: var(--Very-light-grayish-cyan);
+    display: flex;
+    background-color: var(--White);
     border-radius: 1.5rem;
     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.15);
+}
+
+.left_side{
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: var(--Dark-grayish-cyan);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+#numberbill{
+    width: 100%;
+    max-width: 20rem;
+    height: 3rem;
+    padding: 1rem;
+    text-align: right;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    color: var(--Very-dark-cyan);
+    background: url(./images/icon-dollar.svg) no-repeat var(--Very-light-grayish-cyan);
+    background-position-x: 0.9rem;
+    background-position-y: 0.9rem;
+}
+
+.select_tip{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: var(--Dark-grayish-cyan);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.right_side{
+    width: 50%;
 }
