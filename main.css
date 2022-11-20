@@ -49,16 +49,10 @@ img{
     flex-direction: column;
 }
 
-h1{
-    color: var(--Dark-grayish-cyan);
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-}
-
 #numberbill{
     width: 100%;
     max-width: 20rem;
-    height: 3rem;
+    height: 2.8rem;
     padding: 1rem;
     text-align: right;
     font-size: 1.5rem;
@@ -68,17 +62,75 @@ h1{
     background: url(./images/icon-dollar.svg) no-repeat var(--Very-light-grayish-cyan);
     background-position-x: 0.9rem;
     background-position-y: 0.9rem;
+    margin-bottom: 2.5rem;
 }
 
 .select_tip{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 10rem;
+    margin-bottom: 1.5rem;
 }
+
+.percent{
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+.percent_number{
+    width: 6rem;
+    height: 2.8rem;
+    text-align: center;
+    background-color: var(--Very-dark-cyan);
+    font-size: 1.2rem;
+    color: var(--White);
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.percent_number:hover{
+    transform: scale(1.02);
+}
+
+.percent_number_custom{
+    width: 6rem;
+    height: 2.8rem;
+    text-align: center;
+    background-color: var(--Very-light-grayish-cyan);
+    font-size: 1.4rem;
+    color: var(--Dark-grayish-cyan);
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.percent_number_custom:hover{
+    transform: scale(1.02);
+}
+
 
 label{
     color: var(--Dark-grayish-cyan);
     font-size: 1rem;
     letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+#numberpeople{
+    width: 100%;
+    max-width: 20rem;
+    height: 2.8rem;
+    padding: 1rem;
+    text-align: right;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    background: url(./images/icon-person.svg) no-repeat var(--Very-light-grayish-cyan);
+    background-position-x: 0.9rem;
+    background-position-y: 0.9rem;
 }
 
 .right_side{

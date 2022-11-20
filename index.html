@@ -12,13 +12,28 @@
   <img src="images/logo.svg" alt="logo">
   <main id="container">
     <div class="left_side">
-      <h1>Bill</h1>
+      <label>Bill</label>
       <div class="numberbill">
         <input type="text" name="number" id="numberbill" placeholder="00.00" maxlength="18" minlength="1">
       </div>
-      <div class="Select_tip">
+      <div class="select_tip">
         <label name="tip">Select tip %</label>
-          <input type="text" placeholder="5%">
+          <div class="percent">
+            <button class="percent_number" value="0.05">5%
+              <button class="percent_number" value="0.10">10%
+                <button class="percent_number" value="0.15">15%
+          </div>
+          <div class="percent">
+            <button class="percent_number" value="0.25">25%
+              <button class="percent_number" value="0.50">50%
+                <button class="percent_number_custom" value="Custom">Custom
+          </div>
+      </div>
+      <div class="number_people">
+        <label>Number of People</label>
+          <div class="numberpeople">
+            <input type="text" name="number" id="numberpeople" placeholder="00" maxlength="18" minlength="1">
+          </div>
       </div>
     </div>
     <div class="right_side">
