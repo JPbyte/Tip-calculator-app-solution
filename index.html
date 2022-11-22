@@ -14,7 +14,8 @@
     <div class="left_side">
       <label>Bill</label>
       <div class="numberbill">
-        <input type="text" name="number" id="numberbill" placeholder="00.00" maxlength="18" minlength="1">
+        <input type="text" name="number" id="numberbill" placeholder="00.00"  maxlength="18">
+          <span class="error"></span>
       </div>
       <div class="select_tip">
         <label name="tip">Select tip %</label>
@@ -33,6 +34,7 @@
         <label>Number of People</label>
           <div class="numberpeople">
             <input type="text" name="number" id="numberpeople" placeholder="00" maxlength="18" minlength="1">
+              <span class="error"></span>
           </div>
       </div>
     </div>
@@ -58,5 +60,7 @@
         <button class="reset">RESET</button>
     </div>
   </main>
+
+  <script src="script/script.js"></script>
 </body>
 </html>

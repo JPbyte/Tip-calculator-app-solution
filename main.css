@@ -8,7 +8,17 @@
     --Very-light-grayish-cyan: hsl(189, 41%, 97%);
     --White: hsl(0, 0%, 100%);
 }
-
+@keyframes fade-in {
+    0%{
+        transform: translateX(2rem);
+    }
+    50%{
+        transform: translateX(1rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 *{
     padding: 0;
     margin: 0;
@@ -50,6 +60,10 @@ img{
     flex-direction: column;
 }
 
+.numberbill{
+    margin-bottom: 0.2rem;
+}
+
 #numberbill{
     width: 100%;
     max-width: 20rem;
@@ -63,13 +77,12 @@ img{
     background: url(./images/icon-dollar.svg) no-repeat var(--Very-light-grayish-cyan);
     background-position-x: 0.9rem;
     background-position-y: 0.9rem;
-    margin-bottom: 2.5rem;
 }
 
 .select_tip{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 10rem;
     margin-bottom: 1.5rem;
 }
@@ -185,3 +198,4 @@ blockquote{
 .reset:hover{
     transform: scale(1.02);
 }
+
