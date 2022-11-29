@@ -5,15 +5,19 @@ const people = document.querySelector("#numberpeople")
 const percent = document.querySelectorAll(".percent_number")
 const custom = document.querySelector(".percent_number_custom")
 const error = document.querySelectorAll(".error")
-
+const valor = document.querySelectorAll(".value")
+const v = document.querySelectorAll(".v")
 
 //Functions
 function number(value){
     return !isNaN(value)
 }
 
+function calculate() {
+    return bill * people
+}
+
 bill.addEventListener("change", () => {
-    divisao()
     if(number(bill.value.split(" ").join(""))) {
         bill.style.border = "0.17rem green solid"
         error[0].textContent = ""
@@ -36,6 +40,7 @@ people.addEventListener("change", () => {
         error[1].style.color = "red"
     }
 })
+
 
 percent[0].addEventListener("click", () => {
     percent[0].style.backgroundColor = "hsl(172, 67%, 45%"
@@ -76,3 +81,5 @@ percent[4].addEventListener("click", () => {
     percent[3].style.backgroundColor = "hsl(183, 100%, 15%)"
     percent[0].style.backgroundColor = "hsl(183, 100%, 15%)"
 })
+
+valor[0].textContent = number(calculate())
