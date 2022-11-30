@@ -95,11 +95,15 @@ img{
     cursor: pointer;
     transition: 0.3s;
 }
+.percent_number:nth-child(3) {
+    background-color: var(--Strong-cyan);
+}
 .percent_number:hover{
     transform: scale(1.02);
+    background-color: var(--Strong-cyan);
 }
 
-.percent_number_custom{
+.percent_custom{
     width: 6rem;
     height: 2.8rem;
     text-align: center;
@@ -187,8 +191,4 @@ blockquote{
 
 .reset:hover{
     transform: scale(1.02);
-}
-
-.click{
-    background-color: hsl(172, 67%, 45%);
 }
