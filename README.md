@@ -33,8 +33,7 @@ Desktop Design :
 
 ### Links
 
-- Solution URL: [Tip calculator app solution]()
-- Live Site URL: [Add live site URL here]()
+- Live Site URL: [Add live site URL here](https://jpbyte.github.io/Tip-calculator-app-solution/)
 
 ## My process
 
