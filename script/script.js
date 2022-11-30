@@ -10,12 +10,11 @@ let billValor = 0.0; // Valor Padrão
 let tipValue = 0.15; //valor inicial
 let peoplevalor = 1;//valor people
 
+//functions
+
 bill.addEventListener("input", billvalue);
 
 people.addEventListener("input", peoplevalue);
-
-
-//functions
 
 function validate(value) {
     return isNaN(value)
@@ -32,7 +31,6 @@ function setColor(event) {
             btn.style.backgroundColor = "hsl(183, 100%, 15%)"
         }
         calcular();
-        console.log(tipValue)
     });
 }
 
@@ -52,7 +50,6 @@ function billvalue() {
     }
     
     billValor = parseFloat(bill.value);
-    console.log(billvalue)
     calcular()
 };
 
@@ -78,7 +75,6 @@ function peoplevalue() {
 
     peoplevalor = parseFloat(people.value);
     calcular();
-    console.log(peoplevalor)
 }
 
 function calcular() {
