@@ -102,6 +102,9 @@ img{
     transform: scale(1.02);
     background-color: var(--Strong-cyan);
 }
+.btn_active{
+    background-color: var(--Strong-cyan)
+}
 
 .percent_custom{
     width: 6rem;
